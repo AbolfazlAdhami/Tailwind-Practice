@@ -542,14 +542,14 @@ video {
   margin-bottom: 3rem;
 }
 
-.my-9 {
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-}
-
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .mb-12 {
@@ -558,6 +558,10 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-2 {
@@ -588,6 +592,14 @@ video {
   width: 66.666667%;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -598,6 +610,14 @@ video {
 
 .scroll-mt-20 {
   scroll-margin-top: 5rem;
+}
+
+.scroll-mt-10 {
+  scroll-margin-top: 2.5rem;
+}
+
+.scroll-mt-5 {
+  scroll-margin-top: 1.25rem;
 }
 
 .list-none {
@@ -612,6 +632,10 @@ video {
   flex-direction: column-reverse;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -624,12 +648,16 @@ video {
   justify-content: space-between;
 }
 
-.gap-6 {
-  gap: 1.5rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -638,12 +666,16 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
+.self-center {
+  align-self: center;
 }
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -657,6 +689,11 @@ video {
 .border-slate-50 {
   --tw-border-opacity: 1;
   border-color: rgb(248 250 252 / var(--tw-border-opacity));
+}
+
+.border-slate-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 23 42 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -674,14 +711,18 @@ video {
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
 }
 
+.bg-teal-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 94 89 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
@@ -697,38 +738,22 @@ video {
   padding-right: 0.5rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
-}
-
-.pl-14 {
-  padding-left: 3.5rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
-}
-
-.pr-10 {
-  padding-right: 2.5rem;
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pl-16 {
   padding-left: 4rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
 }
 
 .text-left {
@@ -741,6 +766,10 @@ video {
 
 .text-right {
   text-align: right;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .text-2xl {
@@ -934,6 +963,11 @@ video {
   content: var(--tw-content);
 }
 
+.hover\:bg-teal-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
+}
+
 .hover\:opacity-80:hover {
   opacity: 0.8;
 }
@@ -947,7 +981,16 @@ video {
   outline-offset: 2px;
 }
 
+.active\:bg-teal-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+}
+
 @media (prefers-color-scheme: dark) {
+  .dark\:border-none {
+    border-style: none;
+  }
+
   .dark\:border-gray-100 {
     --tw-border-opacity: 1;
     border-color: rgb(243 244 246 / var(--tw-border-opacity));
@@ -961,6 +1004,11 @@ video {
   .dark\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .dark\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 
   .dark\:text-indigo-300 {
@@ -977,16 +1025,15 @@ video {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
-
-  .dark\:text-slate-200 {
-    --tw-text-opacity: 1;
-    color: rgb(226 232 240 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
   }
 
   .sm\:hidden {
@@ -1005,12 +1052,25 @@ video {
     flex-direction: row;
   }
 
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .sm\:scroll-smooth {
     scroll-behavior: smooth;
   }
 
   .sm\:text-left {
     text-align: left;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:text-3xl {
@@ -1021,11 +1081,6 @@ video {
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
